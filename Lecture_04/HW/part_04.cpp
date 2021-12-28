@@ -12,17 +12,18 @@ int main()
     int row=1;
     while (row<=n)
     {
-       int col=1;
-       while (col<=n)
-       {
-           char ch='A'+row+col-2;
+        int col=1;
+        int value=row;
+        while(col<=row)
+        {
+           char ch='A'+value-1;
            cout<<ch<<" ";
+           value++;
            col++;
-       }
-       cout<<endl;
-       row++;
-       
+        }
+        cout<<endl;
+        row++;
+        
     }
     
-    return 0;
-}
+} 
